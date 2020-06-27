@@ -10,6 +10,7 @@ steps:
   inputs:
     provider: 'azurerm'
     command: 'init'
+    workingDirectory: '12-CI-CD-Pipelines/Azure-Devops/AKS'
     commandOptions: '-var="Name=$(Name)" -var="resourceGroup=$(resourceGroup)" -var="clientID=$(clientID)" -var="clientSecret=$(clientSecret)" -var="location=$(location)"'
     backendServiceArm: 'Barrys SandPit Subscription(1)(24dbe47f-e190-43aa-9a5c-80999a728e59)'
     backendAzureRmResourceGroupName: 'rg-akscloudskills'
